@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  text-align: center;
+  height: 100vh;
+  grid-template-columns: 30% auto;
+  grid-template-rows: 250px auto 100px;
+  grid-template-areas: "header header" "sidebar main" "nav nav" "footer footer ";
+}
+header {
+  background: firebrick;
+  grid-area: header;
+}
+nav {
+  background: fuchsia;
+  grid-area: nav;
+}
+.ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+.li {
+  padding: 0 10px;
+}
+aside {
+  background: orange;
+  grid-area: sidebar;
+}
+main {
+  background: aquamarine;
+  grid-area: main;
+}
+footer {
+  background: sandybrown;
+  grid-area: footer;
+}
